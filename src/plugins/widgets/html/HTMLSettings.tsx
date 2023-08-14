@@ -9,6 +9,7 @@ const HTMLSettings: React.FC<API<Data>> = ({ data = defaultData, setData }) => {
         HTML
         <input
           type="text"
+          value = {data.html}
           onChange={(event) =>
             setData({ ...data, html: String(event.target.value) })
           }
